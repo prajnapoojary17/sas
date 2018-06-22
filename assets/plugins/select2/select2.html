@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="demo">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>select2-bootstrap-css</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="select2.css">
+	<link rel="stylesheet" href="select2-bootstrap.css">
+</head>
+
+	<body>
+		<select class="form-control select2">
+			<option value="">Select...</option>
+			<option value="Option 1">Option 1</option>
+			<option value="Option 2">Option 2</option>
+			<option value="Option 3">Option 3</option>
+			<option value="Option 4">Option 4</option>
+		</select>
+		
+		<hr />		    
+     
+		<select class="form-control js-example-basic-multiple" multiple="multiple">
+			<option value="AL">Alabama</option>
+			<option value="Option 1">Option 1</option>
+			<option value="Option 2">Option 2</option>
+			<option value="Option 3">Option 3</option>
+			<option value="Option 4">Option 4</option>
+			<option value="WY">Wyoming</option>
+		</select>
+	
+	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="select2.js"></script>
+		<script>
+			  $('.select2').select2();
+			  $(".js-example-basic-multiple").select2();
+		</script>
+	</body>
+</html>

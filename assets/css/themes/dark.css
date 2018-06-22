@@ -1,0 +1,62 @@
+/*
+ * Default Theme
+ */
+body {
+    background: #222 none repeat scroll 0 0;
+}
+.page-header.navbar {
+    background: #222222 none repeat scroll 0 0;
+    border-bottom: 1px solid #000;
+}
+.page-header.navbar .top-menu .navbar-nav > li > a {
+    color: #999999;
+}
+.page-header.navbar .top-menu .navbar-nav.nav > li > a:focus, 
+.page-header.navbar .top-menu .navbar-nav.nav > li > a:hover,
+.page-header.navbar .top-menu .navbar-nav.nav .open > a, 
+.page-header.navbar .top-menu .navbar-nav.nav .open > a:focus, 
+.page-header.navbar .top-menu .navbar-nav.nav .open > a:hover{
+    background-color: #333333;
+}
+.page-header.navbar .page-logo > a {
+    color: #ffffff;
+}
+.page-footer .page-footer-inner {
+    color: #666666;
+}
+.page-footer .page-footer-tools .go-top i {
+    color: #ffffff;
+}
+.page-title {
+    background: #1d2939 none repeat scroll 0 0;
+    color: #fff;
+}
+.page-sidebar .page-sidebar-menu > li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a {
+	border-bottom: 1px solid #2a2a2a;
+    color: #666666;
+}
+.page-sidebar .page-sidebar-menu > li > a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a:hover {
+    color: #ffffff;
+}
+.page-sidebar .page-sidebar-menu .sub-menu li > a:hover, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > a:hover {
+    color: #ffffff;
+}
+.page-sidebar .page-sidebar-menu .sub-menu li > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu .sub-menu li > a {
+    color: #666666;
+}
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li:hover > a,
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.open > a,
+.page-sidebar .page-sidebar-menu > li:hover > a,
+.page-sidebar .page-sidebar-menu > li.open > a,
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li:hover > .sub-menu {
+    background: #222222 none repeat scroll 0 0;
+	color: #fff;
+}
+.page-sidebar .page-sidebar-menu > li.active > a, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a {
+    background: #ff404b;
+background: -moz-linear-gradient(top,  #ff404b 0%, #ff2c5c 100%);
+background: -webkit-linear-gradient(top,  #ff404b 0%,#ff2c5c 100%);
+background: linear-gradient(to bottom,  #ff404b 0%,#ff2c5c 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff404b', endColorstr='#ff2c5c',GradientType=0 );
+    color: #fff;
+}

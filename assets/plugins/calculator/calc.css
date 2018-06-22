@@ -1,0 +1,226 @@
+/* ------- calculator housing ------- */
+
+.calc-main:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.calc-small {
+	/* width: 240px; */ /* only needed in Chrome extension */
+}
+
+/* --------- display --------- */
+
+.calc-display {
+    background: #dddddd;
+    color: #666666;
+    cursor: default;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 0 5px 0;
+    padding: 0px 10px;
+    position: relative;
+    text-align: right;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
+    white-space: nowrap;
+    font-weight: 700;
+}
+.calc-rad {
+	position: absolute;
+	bottom: 5px;
+	font-size: 14px;
+	line-height: 14px;
+	left: 10px;
+}
+.calc-small .calc-rad {
+	display: none;
+}
+.calc-hold {
+	position: absolute;
+	right: 5px;
+	bottom: 1px;
+	font-size: 8px;
+	line-height: 13px;
+	color: #666;
+	height: 12px;
+}
+
+/* ----- display helper buttons ----- */
+
+.calc-buttons {
+    height: 14px;
+    left: 5px;
+    opacity: 0.35;
+    position: absolute;
+    top: 4px;
+    transition: opacity 0.15s ease-in 0s;
+    width: 14px;
+}
+.calc-buttons:hover {
+	opacity: 0.75;
+	height: 100%;
+	width: 17px;
+}
+.calc-buttons div {
+	position: absolute;
+	top: 1px;
+	height: 13px;
+	width: 13px;
+	font-size: 8px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 12px;
+	text-indent: 1px;
+	color: #333;
+	cursor: default;
+	border-radius: 50%;
+	border: 1px solid #444;
+}
+.calc-buttons .calc-smaller {
+	opacity: 0;
+}
+.calc-buttons .calc-ln {
+	font-size: 17px;
+	line-height: 2px;
+	overflow: hidden;
+	opacity: 0;
+}
+.calc-buttons:hover div {
+	transition:
+		opacity 0.15s ease-in,
+		top 0.25s ease-out;
+}
+
+.calc-buttons:hover .calc-smaller {
+	top: 15px;
+	opacity: 0.75;
+}
+.calc-buttons:hover .calc-ln {
+	top: 29px;
+	opacity: 0.75;
+}
+.calc-buttons .calc-info:hover, .calc-buttons .calc-smaller:hover, .calc-buttons .calc-ln:hover {
+	opacity: 1;
+}
+
+/* -------- key board -------- */
+
+.calc-left, .calc-right {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.calc-small .calc-left {
+	display: none;
+}
+.calc-f17 {
+	font-size: 17px;
+}
+.calc-f18 {
+	font-size: 18px;
+}
+.calc-f19 {
+	font-size: 19px;
+}
+.calc-f21 {
+	font-size: 21px;
+}
+.calc-main textarea {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 4px;
+	top: 4px;
+	border: 0;
+	background-color: transparent;
+}
+
+/* -------- key board keys -------- */
+
+.calc-left > div, .calc-right > div {
+    background-color: #4c5356;
+    cursor: default;
+    float: left;
+    height: 38px;
+    margin: 5px 4px;
+    overflow: hidden;
+    position: relative;
+    width: 84px;
+    line-height: 38px;
+}
+.calc-left > div > div, .calc-right > div > div {
+    background: #428bca none repeat scroll 0 0;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.2) inset;
+    color: #ffffff;
+    height: 38px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.calc-right .calc-eq {
+	height: 86px;
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	background-color: #d9534f;
+}
+.calc-down {
+	padding-top: 40px;
+}
+.calc-radxy sup {
+	padding-bottom: 4px;
+	display: block;
+	position: absolute;
+	left: 14px;
+	top: 6px;
+}
+.calc-radxy em {
+	font-weight: normal;
+	font-size: 16px;
+	padding-right: 2px;
+}
+.calc-right .calc-zero {
+	width: 177px;
+}
+.calc-right .calc-zero div {
+	text-align: left;
+}
+.calc-right .calc-zero span {
+	padding-left: 22px;
+}
+.calc-blank {
+	border-color: transparent;
+	background: none;
+	background-image: none;
+	box-shadow: none;
+	clear: right;
+}
+.calc-right .calc-brown > div {
+	background-color: #16a085;
+}
+.calc-right .calc-brown {
+	background-color: #4b3c34;
+}
+
+.calc-right .calc-black > div {
+	background-color: #66778d;
+}
+.calc-right .calc-black {
+	background-color: #181818;
+}
+.calc-right .calc-orange > div {
+	background-color: #d9534f;
+	height: 86px;
+}
+sup, sub {
+	font-size: 10px;
+	line-height: 0;
+	padding-left: 1px;
+}
+.calc-left .calc-press > div, .calc-right .calc-press > div {
+    background: #1b64a3 none repeat scroll 0 0;
+}

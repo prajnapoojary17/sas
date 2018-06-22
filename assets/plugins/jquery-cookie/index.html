@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cookie</title>
+</head>
+<body>
+
+<ul>
+		<li class="mainitem">item1
+			<ul class="subitems">
+				<li>item1.2</li>
+				<li>item1.3</li>
+				<li>item1.4</li>
+				<li>item1.5</li>
+			</ul>
+		</li>
+		<li class="mainitem">item2
+			<ul class="subitems">
+				<li>item2</li>
+			</ul>
+		</li>
+		<li class="mainitem">item3
+			<ul class="subitems">
+				<li>item3.2</li>
+				<li>item3.3</li>
+			</ul>
+		</li>
+			
+	</ul>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js"></script>
+<script>
+
+$('.subitems').hide();
+
+// check cookie
+checkCookie();
+
+function checkCookie() {
+    // the cookie exists
+    if($.cookie('mainlevel')) {
+        var index = $.cookie('mainlevel');
+        $(".mainitem:eq(" + index + ")").find("ul").show();
+    }
+}
+
+// click on .mainitem
+$('.mainitem').click(function(event) {
+    // get the index
+    var cookie = $(this).index();   
+    // previous value
+    var previousValue = $.cookie('mainlevel');    
+    // save the cookie        
+    $.cookie('mainlevel', [cookie], { expires: 30 });  
+        
+    // toggle if change happend
+    if (previousValue != cookie) {            
+        $(".mainitem").find("ul").slideUp();        
+        $(this).find('ul').slideDown();
+    }   
+       
+});
+
+
+</script>
+</body>
+</html>
+

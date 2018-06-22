@@ -1,0 +1,267 @@
+/******************************
+ 3RD PARTY PLUGIN CUSTOMIZATION 
+******************************/
+/***
+Bootstrap Datepicker
+***/
+
+.datepicker.dropdown-menu {
+    padding: 5px;
+}
+.datepicker .selected {
+    background-color: #909090 !important;
+    background-image: none !important;
+    filter: none !important;
+}
+.datepicker .active {
+    background-color: #4b8df8 !important;
+    background-image: none !important;
+    filter: none !important;
+}
+.datepicker .active:hover {
+    background-color: #2678FC !important;
+    background-image: none !important;
+    filter: none !important;
+}
+.datepicker .input-daterange input {
+    text-align: left;
+}
+/* change z-index when opened in modal */
+
+.modal-open .datepicker {
+    z-index: 10055 !important;
+}
+.datepicker table td {
+    font-weight: 300 !important;
+    font-family: 'Open Sans' !important;
+}
+.datepicker table th {
+    font-family: 'Open Sans' !important;
+    font-weight: 400 !important;
+}
+.datepicker.dropdown-menu {
+    box-shadow: 5px 5px rgba(102, 102, 102, 0.1);
+    border: 1px solid #efefef;
+}
+/***
+Bootstrap Modal
+***/
+/* fix: content shifting to the right on modal open */
+
+.modal-open.page-overflow .page-container,
+.modal-open.page-overflow .page-container .navbar-fixed-top,
+.modal-open.page-overflow .page-container .navbar-fixed-bottom,
+.modal-open.page-overflow .modal-scrollable {
+    overflow-y: auto !important;
+}
+.modal-scrollable {
+    overflow: hidden !important;
+}
+/***
+Datatables Plugin(in v1.3)
+***/
+
+.dataTable {
+    width: 100%;
+    clear: both;
+    margin-top: 5px;
+}
+.dataTables_filter .form-control {
+    margin-left: 4px;
+}
+.dataTables_filter label {
+    line-height: 32px;
+}
+.dataTable .row-details {
+    margin-top: 3px;
+    display: inline-block;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+}
+.dataTable .row-details.row-details-close {
+    background: url("../img/datatable-row-openclose.png") no-repeat 0 0;
+}
+.dataTable .row-details.row-details-open {
+    background: url("../img/datatable-row-openclose.png") no-repeat 0 -23px;
+}
+.dataTable .details {
+    background-color: #eeeeee;
+}
+.dataTable .details td,
+.dataTable .details th {
+    padding: 4px;
+    background: none;
+    border: 0;
+}
+.dataTable .details tr:hover td,
+.dataTable .details tr:hover th {
+    background: none;
+}
+.dataTable .details tr:nth-child(odd) td,
+.dataTable .details tr:nth-child(odd) th {
+    background-color: #eeeeee;
+}
+.dataTable .details tr:nth-child(even) td,
+.dataTable .details tr:nth-child(even) th {
+    background-color: #eeeeee;
+}
+.dataTable > thead > tr > th.sorting,
+.dataTable > thead > tr > th.sorting_asc,
+.dataTable > thead > tr > th.sorting_desc {
+    padding-right: 18px;
+}
+.dataTable .table-checkbox {
+    width: 8px !important;
+}
+.data-value tr td div {
+    background: #eeeeee none repeat scroll 0 0;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    .dataTables_wrapper .dataTables_length .form-control,
+    .dataTables_wrapper .dataTables_filter .form-control {
+        display: inline-block;
+    }
+	.dataTables_length .select2-container.form-control.input-sm {
+		width: 90px;
+	}
+    .dataTables_wrapper .dataTables_info {
+        top: 17px;
+    }
+    .dataTables_wrapper .dataTables_paginate {
+        margin-top: -15px;
+    }
+}
+@media (max-width: 480px) {
+    .dataTables_wrapper .dataTables_filter .form-control {
+        width: 175px !important;
+    }
+    .dataTables_wrapper .dataTables_paginate {
+        float: left;
+        margin-top: 20px;
+    }
+}
+.dataTables_processing {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 125px;
+    margin-left: 0;
+    padding: 7px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    vertical-align: middle;
+    -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+.dataTables_processing span {
+    line-height: 15px;
+    vertical-align: middle;
+}
+.dataTables_empty {
+    text-align: center;
+}
+/***
+jQuery Slimscroll
+***/
+
+.scroller {
+    padding: 0px;
+    margin: 0px;
+    padding-right: 12px;
+    overflow: hidden;
+}
+.scroller-footer {
+    margin-top: 10px;
+}
+.scroller-footer:before,
+.scroller-footer:after {
+    content: " ";
+    display: table;
+}
+.scroller-footer:after {
+    clear: both;
+}
+.portlet-body .slimScrollBar {
+    margin-right: 0px;
+}
+/***
+Select2 Plugin
+***/
+
+.form-control .select2-choice {
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    background-image: none;
+    filter: none;
+    height: 34px;
+    /*padding: 3px 0 0px 12px;*/
+}
+/***
+jQuery Uniform
+***/
+
+.checker {
+    margin-top: -2px !important;
+    margin-right: 2px !important;
+}
+.checker input,
+.radio input {
+    outline: none !important;
+}
+div.checker.disabled span,
+div.checker.disabled.active span {
+    background-position: -152px -260px;
+}
+div.checker.disabled:hover,
+div.radio.disabled:hover {
+    cursor: not-allowed;
+}
+div.radio,
+div.checker {
+    margin-right: 0;
+    margin-left: 3px;
+}
+/***
+Bootstrap Switch
+***/
+
+.bootstrap-switch-container .checker {
+    display: none;
+}
+.bootstrap-switch {
+	background: #ffffff none repeat scroll 0 0;
+    border-radius: 25px;
+}
+.bootstrap-switch .bootstrap-switch-handle-on, .bootstrap-switch .bootstrap-switch-handle-off{
+	border-radius:25px;
+}
+/***
+Bootstrap Wizard
+***/
+
+.rootwizard .container {
+    width: auto;
+    padding: 0;
+}
+.rootwizard .pager li > a, .rootwizard .pager li > a:hover{
+    background-color: #16a086;
+    border: none;
+    border-bottom: 5px solid #12806b;
+	color:#fff;
+	padding: 10px 20px;
+}
+.rootwizard .pager .finish {
+    float: right;
+}
+.rootwizard .progress {
+    border-radius: 0;
+    height: 10px;
+    margin-bottom: 15px;
+}
